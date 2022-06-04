@@ -48,9 +48,13 @@ function crearCarrucel(idContenedor, numeroVistas, intervaloDeTiempo) {
         }, intervaloDeTiempo);
         botonStop.removeAttribute('disabled');
         botonPlay.setAttribute('disabled', true);
+        botonDerecho.setAttribute('disabled', true);
+        botonIzquierdo.setAttribute('disabled', true);
     }
     const terminarIntervalo = () => {
         clearInterval(reproduccionAutomatica);
+        botonDerecho.removeAttribute('disabled');
+        botonIzquierdo.removeAttribute('disabled');
         botonPlay.removeAttribute('disabled');
         botonStop.setAttribute('disabled', true);
     }
@@ -69,7 +73,7 @@ function crearCarrucel(idContenedor, numeroVistas, intervaloDeTiempo) {
         //Siempre se va a mostrar la primera vista
         aparecerVista(1);
         //Siempre inicia con el intervalo
-        // iniciarIntervalo();
+        iniciarIntervalo();
 
     //Eventos de botones
     botonDerecho.addEventListener('click', ()=> {
