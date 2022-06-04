@@ -1,0 +1,10 @@
+/* Estas clases se utilizan en JavaScript para aparecer y desaparecer contenido */
+.displayBlock {
+    display: block;
+}
+.displayNone {
+    display: none;
+}
+.displayFlex {
+    display: flex;
+}

@@ -4,5 +4,9 @@
 }
 body{
     background-color: rgb(240, 240, 240);
+    color: rgb(33, 33, 33);
     font-family: 'Titillium Web', sans-serif;
+}
+a{
+    color: rgb(33, 33, 33);
 }

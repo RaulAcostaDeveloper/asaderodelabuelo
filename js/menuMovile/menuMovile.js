@@ -3,11 +3,11 @@ let toggleMenu=true;
 const abrirMenuMovile = ()=>{
     if (toggleMenu) {
         elementoDOM.classList.remove("displayNone");
-        elementoDOM.classList.add("menuMovile");
+        elementoDOM.classList.add("displayBlock");
         toggleMenu=false;
     } else {
         elementoDOM.classList.add("displayNone");
-        elementoDOM.classList.remove("menuMovile");
+        elementoDOM.classList.remove("displayBlock");
         toggleMenu=true;
     }
 }
