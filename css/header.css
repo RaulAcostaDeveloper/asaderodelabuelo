@@ -38,8 +38,9 @@ header #menuMovile{
     /* Aparición */
     display: block;
     /* Posición */
-    position:absolute;
+    position:fixed;
     width: 100%;
+    height: 90%-40px;
     top: 0;
     left: 0;
     /* Apariencia */
