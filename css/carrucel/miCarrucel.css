@@ -3,9 +3,22 @@
     width: 100%;
     height: 300px;
 }
+#contenedorCarrucel2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#carrucel2{
+    width: 50%;
+    height: 300px;
+}
 /* Decide independientemente estilos del carrucel */
 #carrucel1 img{
     border-radius: 30%;
+}
+#carrucel2 img{
+    /* border-radius: 30%; */
 }
 /* Decide cuál carrucel se muestra dependiendo la pantalla */
 @media screen and (min-width: 768px){
@@ -13,10 +26,18 @@
         display: block;
     }
 }
+@media screen and (max-width: 768px){
+    #carrucel2{
+        width: 90%;
+        height: 300px;
+    }
+}
 /* Propiedades fijas */
 .carrucel{
     display: flex;
     position:relative;
+    overflow: hidden;
+
 }
 /* Botones */
 .carrucel button{
