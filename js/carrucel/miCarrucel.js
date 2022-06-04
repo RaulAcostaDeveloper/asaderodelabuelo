@@ -4,7 +4,7 @@ function crearCarrucel(idContenedor, numeroVistas, intervaloDeTiempo) {
     //Métodos
     const aparecerVista = (id) => {
         let vista = document.getElementById('contenedorVista'+id+idContenedor);
-        vista.classList.remove("animacionDesplazarHaciaIzquierda");
+        vista.classList.remove("animacionDesaparecer");
         vista.classList.remove("displayNone");
         vista.classList.add("displayFlex");
         vista.classList.add("animacionDesplazarDesdeDerecha");
@@ -13,7 +13,7 @@ function crearCarrucel(idContenedor, numeroVistas, intervaloDeTiempo) {
     const desaparecerVista = (id) => {
         let vista = document.getElementById('contenedorVista'+id+idContenedor);
         vista.classList.remove("animacionDesplazarDesdeDerecha");
-        vista.classList.add("animacionDesplazarHaciaIzquierda");
+        vista.classList.add("animacionDesaparecer");
         console.log(vista);
         setTimeout(() => {
             vista.classList.remove("displayFlex");

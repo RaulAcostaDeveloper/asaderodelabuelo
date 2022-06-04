@@ -14,11 +14,14 @@
     animation-duration: 2s;
     animation-name: animacionDesplazarDesdeDerecha;
 }
-.animacionDesplazarHaciaIzquierda {
+.animacionDesaparecer {
     animation-duration: 1s;
-    animation-name: animacionDesplazarHaciaIzquierda;
+    animation-name: animacionDesaparecer;
 }
-  
+.animacionAparecer {
+    animation-duration: 1s;
+    animation-name: animacionAparecer;
+}
 @keyframes animacionDesplazarDesdeDerecha {
     from {
       margin-left: 100%;
@@ -30,12 +33,21 @@
       opacity: 1;
     }
 }
-@keyframes animacionDesplazarHaciaIzquierda {
+@keyframes animacionDesaparecer {
     from {
       opacity: 1;
     }
   
     to {
       opacity: 0;
+    }
+}
+@keyframes animacionAparecer {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
     }
 }
