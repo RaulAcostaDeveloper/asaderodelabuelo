@@ -63,10 +63,11 @@
 .carrucel .contenedorImagenesCarrucel{
     width: 100%;
     height: 100%;
-    display: flex;
+    /* El display se lo dá en el javaScript */
+    /* display: flex; */
+    position: absolute;
     justify-content:space-around;
     align-items: center;
-    opacity: 0;
 }
 
 .carrucel .contenedorImagenesCarrucel img{

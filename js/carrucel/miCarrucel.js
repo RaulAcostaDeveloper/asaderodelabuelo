@@ -2,15 +2,23 @@ function crearCarrucel(idContenedor, numeroVistas, intervaloDeTiempo) {
     let vistaActual = 1; //Empieza en 1, no es un arreglo
     let reproduccionAutomatica; //Reproduccion automática Play
     //Métodos
-    const desaparecerVista = (id) => {
-        let vista = document.getElementById('contenedorVista'+id+idContenedor);
-        vista.style.display='none';
-        gsap.to(vista, {opacity:0,duration: 0.8});
-    }
     const aparecerVista = (id) => {
         let vista = document.getElementById('contenedorVista'+id+idContenedor);
-        vista.style.display='flex';
-        gsap.to(vista, {opacity:1,duration: 0.8});
+        vista.classList.remove("animacionDesplazarHaciaIzquierda");
+        vista.classList.remove("displayNone");
+        vista.classList.add("displayFlex");
+        vista.classList.add("animacionDesplazarDesdeDerecha");
+        console.log(vista);
+    }
+    const desaparecerVista = (id) => {
+        let vista = document.getElementById('contenedorVista'+id+idContenedor);
+        vista.classList.remove("animacionDesplazarDesdeDerecha");
+        vista.classList.add("animacionDesplazarHaciaIzquierda");
+        console.log(vista);
+        setTimeout(() => {
+            vista.classList.remove("displayFlex");
+            vista.classList.add("displayNone");
+        }, 800);
     }
     const avanzarVista = () => {
         if(vistaActual >= numeroVistas) {
@@ -56,12 +64,12 @@ function crearCarrucel(idContenedor, numeroVistas, intervaloDeTiempo) {
     //Eventos al iniciar el carrucel
         //Desaparece las otras vistas al inicio
         for (let index = 1; index <= numeroVistas; index++) {
-            desaparecerVista(index);
+            document.getElementById('contenedorVista'+index+idContenedor).classList.add("displayNone");
         }
         //Siempre se va a mostrar la primera vista
         aparecerVista(1);
         //Siempre inicia con el intervalo
-        iniciarIntervalo();
+        // iniciarIntervalo();
 
     //Eventos de botones
     botonDerecho.addEventListener('click', ()=> {

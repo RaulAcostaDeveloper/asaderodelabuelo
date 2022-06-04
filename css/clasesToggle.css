@@ -8,3 +8,34 @@
 .displayFlex {
     display: flex;
 }
+
+
+.animacionDesplazarDesdeDerecha {
+    animation-duration: 2s;
+    animation-name: animacionDesplazarDesdeDerecha;
+}
+.animacionDesplazarHaciaIzquierda {
+    animation-duration: 1s;
+    animation-name: animacionDesplazarHaciaIzquierda;
+}
+  
+@keyframes animacionDesplazarDesdeDerecha {
+    from {
+      margin-left: 100%;
+      opacity: 0;
+    }
+  
+    to {
+      margin-left: 0%;
+      opacity: 1;
+    }
+}
+@keyframes animacionDesplazarHaciaIzquierda {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+}
