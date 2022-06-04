@@ -2,6 +2,9 @@
     #botonHamburguesa{
         display: none;
     }
+    #menuDeskTop{
+        display: block;
+    }
 }
 header{
     position:fixed;
