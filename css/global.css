@@ -14,3 +14,39 @@ a{
 button{
     cursor: pointer;
 }
+/* Estilos de letra */
+.tituloParrafo{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloParrafo h3{
+    width: 100%;
+    text-align: center;
+    font-size:25px;
+}
+.parrafoInformacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafoInformacion p{
+    width: 90%;
+    text-align: justify;
+    font-size:18px;
+}
+.tituloSeccion{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloSeccion h3{
+    width: 100%;
+    text-align: center;
+    font-size:30px;
+}
