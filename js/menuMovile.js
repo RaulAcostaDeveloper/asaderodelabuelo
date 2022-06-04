@@ -1,5 +1,4 @@
 const elementoDOM = document.getElementById('menuMovile');
-console.log(elementoDOM);
 let toggleMenu=true;
 const abrirMenuMovile = ()=>{
     if (toggleMenu) {
