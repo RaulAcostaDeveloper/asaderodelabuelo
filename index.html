@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage1</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/carrucel/miCarrucel.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <!-- Estilos de letra -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <button><img src="./imagenes/logo.png" alt=""></button>
+        <button id="botonHamburguesa" onclick="abrirMenuMovile();"><img src="./imagenes/menu-hamburguesa.svg" alt=""></button>
+        <div id="menuMovile" class="displayNone">
+            <a href="#primera" class="menu-movile-item">Inicio</a>
+            <a href="#segunda" class="menu-movile-item">Nosotros</a>
+            <a href="#tercera" class="menu-movile-item">Servicios</a>
+            <a href="#cuarta" class="menu-movile-item">Animación</a>
+            <a href="#quinta" class="menu-movile-item">Contacto</a>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div id="carrucel1" class="carrucel">
+                <div class="carrucelBotonesFlecha">
+                    <button class="carrucelBotonDerecho" id="botonIzquierdocarrucel1"><</button>
+                    <button class="carrucelBotonIzquierdo" id="botonDerechocarrucel1">></button>
+                </div>
+                <div id="contenedorImagenescarrucel1" class="contenedorVistas">
+                    <div id="contenedorVista1carrucel1" class="contenedorImagenesCarrucel">
+                        <img src="./imagenes/1.jpeg" alt="">
+                        <img src="./imagenes/2.jpg" alt="">
+                        <img src="./imagenes/3.jpg" alt="">
+                    </div>
+                    <div id="contenedorVista2carrucel1" class="contenedorImagenesCarrucel">
+                        <img src="./imagenes/4.jpg" alt="">
+                        <img src="./imagenes/5.jpg" alt="">
+                        <img src="./imagenes/6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carrucelBotonesPlayStop">
+                    <button class="carrucelBotonPlay" id="botonPlaycarrucel1">Play</button>
+                    <button class="carrucelBotonStop" id="botonStopcarrucel1">Stop</button>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer></footer>
+    <script src="./js/carrucel/index.js"></script>
+    <script src="./js/carrucel/miCarrucel.js"></script>
+    <script src="./js/menuMovile.js"></script>
+    <!-- Requiere conexión a internet -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+</body>
+</html>

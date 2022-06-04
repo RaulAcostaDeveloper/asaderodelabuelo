@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px){
+    #botonHamburguesa{
+        display: none;
+    }
+}
+header{
+    position:fixed;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(250, 235, 215);
+}
+header button{
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin: 10px;
+}
+header img{
+    height: 100%;
+}
+header #menuMovile{
+    /* Aparición */
+    /* display: block; */
+    /* Posición */
+    /* position:fixed;
+    
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    top: 10%;
+    left: 0px;
+    background-color: aqua; */
+}
+.menuMovile {
+    /* Aparición */
+    display: block;
+    /* Posición */
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* Apariencia */
+    color: rgb(233, 233, 233);
+    background-color: rgb(37, 37, 37);
+    transition: 1s;
+}
+.displayNone {
+    display: none;
+}
