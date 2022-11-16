@@ -1,0 +1,53 @@
+/* Estas clases se utilizan en JavaScript para aparecer y desaparecer contenido */
+.displayBlock {
+    display: block;
+}
+.displayNone {
+    display: none;
+}
+.displayFlex {
+    display: flex;
+}
+
+
+.animacionDesplazarDesdeDerecha {
+    animation-duration: 2s;
+    animation-name: animacionDesplazarDesdeDerecha;
+}
+.animacionDesaparecer {
+    animation-duration: 1s;
+    animation-name: animacionDesaparecer;
+}
+.animacionAparecer {
+    animation-duration: 1s;
+    animation-name: animacionAparecer;
+}
+@keyframes animacionDesplazarDesdeDerecha {
+    from {
+      margin-left: 100%;
+      opacity: 0;
+    }
+  
+    to {
+      margin-left: 0%;
+      opacity: 1;
+    }
+}
+@keyframes animacionDesaparecer {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+}
+@keyframes animacionAparecer {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}

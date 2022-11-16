@@ -1,0 +1,17 @@
+.pluggins{
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    background-color: rgb(33, 33, 33);
+}
+.pluggins-mapa, .fb-page{
+    width: 300px;
+    height: 500px;
+    -webkit-box-shadow: 0px 0px 14px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 10px rgba(0,0,0,0.75);
+}

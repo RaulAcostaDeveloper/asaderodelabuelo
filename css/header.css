@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px){
+    #botonHamburguesa{
+        display: none;
+    }
+    #menuDeskTop{
+        display: block;
+    }
+}
+header{
+    position:fixed;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(245, 242, 232);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+header button{
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin: 10px;
+}
+header img{
+    height: 100%;
+}

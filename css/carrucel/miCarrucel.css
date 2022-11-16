@@ -1,0 +1,100 @@
+/* Decide independientemente la altura de los carrucel */
+#carrucel1{
+    width: 100%;
+    height: 300px;
+}
+#contenedorCarrucel2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#carrucel2{
+    width: 50%;
+    height: 300px;
+}
+/* Decide independientemente estilos del carrucel */
+#carrucel1 img{
+    border-radius: 30%;
+}
+#carrucel2 img{
+    /* border-radius: 30%; */
+}
+/* Decide cuál carrucel se muestra dependiendo la pantalla */
+@media screen and (min-width: 768px){
+    #carrucel1{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
+    #carrucel2{
+        width: 90%;
+        height: 300px;
+    }
+}
+/* Propiedades fijas */
+.carrucel{
+    display: flex;
+    position:relative;
+    overflow: hidden;
+
+}
+/* Botones */
+.carrucel button{
+    cursor: pointer;
+    z-index: 1;
+}
+.carrucel .carrucelBotonDerecho{
+    left: 10px;
+}
+.carrucel .carrucelBotonIzquierdo{
+    right: 10px;
+}
+.carrucel .carrucelBotonesFlecha button{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    /* top debe ser la mitad del height */
+    top: 140px;
+}
+.carrucel .carrucelBotonesFlecha button:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.carrucel .carrucelBotonesFlecha button:active{
+    background-color:rgba(0, 0, 0, 1);
+}
+.carrucel .carrucelBotonesPlayStop{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.carrucel .carrucelBotonesPlayStop button{
+    height: 30px;
+    width: 60px;
+    margin: 5px;
+}
+/* Imágenes */
+.carrucel .contenedorVistas{
+    width: 100%;
+    height: 100%;
+}
+.carrucel .contenedorImagenesCarrucel{
+    width: 100%;
+    height: 100%;
+    /* El display se lo dá en el javaScript */
+    /* display: flex; */
+    position: absolute;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.carrucel .contenedorImagenesCarrucel img{
+    max-height: 90%;
+    max-width: 30%;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
