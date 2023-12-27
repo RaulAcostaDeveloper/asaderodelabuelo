@@ -1,7 +1,7 @@
 /* Menú */
 #menuMovile{
     /* Apariencia */
-    background-color: rgb(250, 235, 215);
+    background-color: black;
     /* Posición */
     position:fixed;
     width: 100%;
@@ -22,4 +22,5 @@
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid rgb(255, 255, 255);
+    color: whitesmoke;
 }

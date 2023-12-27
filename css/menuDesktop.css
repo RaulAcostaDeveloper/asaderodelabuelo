@@ -5,6 +5,7 @@
     height: 50px;
     font-weight:700;
     font-size: 18px;
+    color: rgb(14, 14, 14)
 }
 #menuDeskTop a:hover{
     text-decoration:underline;

@@ -1,7 +1,7 @@
 /* Decide independientemente la altura de los carrucel */
 #carrucel1{
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 #contenedorCarrucel2{
     width: 100%;
@@ -11,11 +11,11 @@
 }
 #carrucel2{
     width: 50%;
-    height: 300px;
+    height: 400px;
 }
 /* Decide independientemente estilos del carrucel */
 #carrucel1 img{
-    border-radius: 30%;
+    border-radius: 4px;
 }
 #carrucel2 img{
     /* border-radius: 30%; */
@@ -29,7 +29,7 @@
 @media screen and (max-width: 768px){
     #carrucel2{
         width: 90%;
-        height: 300px;
+        height: 400px;
     }
 }
 /* Propiedades fijas */
@@ -90,11 +90,24 @@
     justify-content:space-around;
     align-items: center;
 }
-
+.carrucel .contenedorImagenesCarrucel a{
+    display: flex;
+    justify-content: center;
+    height: 180px;
+}
+@media screen and (min-width: 768px){
+    .carrucel .contenedorImagenesCarrucel a{
+        display: flex;
+        justify-content: center;
+        height: 250px;
+    }
+}
 .carrucel .contenedorImagenesCarrucel img{
-    max-height: 90%;
-    max-width: 30%;
     -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+.imgApps {
+    height: 200px;
+    border-radius: 18px;
 }

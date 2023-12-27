@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandingPage1</title>
+    <title>Asadero del Abuelo</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/carrucel/miCarrucel.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -21,59 +21,67 @@
     <!-- Plugin Facebook -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v11.0" nonce="AoO7cTaP"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZWYL6PTRP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-MZWYL6PTRP');
+    </script>
 </head>
 <body>
     <header>
-        <button><img src="./imagenes/logo.png" alt=""></button>
-        <button id="botonHamburguesa" onclick="abrirMenuMovile();"><img src="./imagenes/menu-hamburguesa.svg" alt=""></button>
+        <button><img src="./imagenes/logoasadero.gif" alt="logo asadero"></button>
+        <button id="botonHamburguesa" onclick="abrirMenuMovile();"><img src="./imagenes/menu-hamburguesa.svg" alt="menu hamburguesa"></button>
         <div id="menuDeskTop" class="displayNone">
-            <a href="#article1">Article1</a>
-            <a href="#article2">Article2</a>
-            <a href="#article3">Article3</a>
-            <a href="#article4">Article4</a>
-            <a href="#article5">Article5</a>
-            <a href="#article6">Article6</a>
+            <a href="#article2">Menú</a>
+            <a href="#article3">Promociones</a>
+            <a href="#article4">Visitanos</a>
+            <a href="#article5">Parrilladas</a>
+            <a href="#article6">Pedidos</a>
+            <a href="#article7">Encuéntranos</a>
         </div>
     </header>
     <div id="menuMovile" class="displayNone">
-        <a href="#article1"  onclick="abrirMenuMovile();">Article1</a>
-        <a href="#article2"  onclick="abrirMenuMovile();">Article2</a>
-        <a href="#article3"  onclick="abrirMenuMovile();">Article3</a>
-        <a href="#article4"  onclick="abrirMenuMovile();">Article4</a>
-        <a href="#article5"  onclick="abrirMenuMovile();">Article5</a>
-        <a href="#article6"  onclick="abrirMenuMovile();">Article6</a>
+        <a href="#article2"  onclick="abrirMenuMovile();">Menu</a>
+        <a href="#article3"  onclick="abrirMenuMovile();">Promociones</a>
+        <a href="#article4"  onclick="abrirMenuMovile();">Visitanos</a>
+        <a href="#article5"  onclick="abrirMenuMovile();">Parrilladas</a>
+        <a href="#article6"  onclick="abrirMenuMovile();">Pedidos</a>
+        <a href="#article7"  onclick="abrirMenuMovile();">Encuéntranos</a>
     </div>
     <section>
+        <!-- Portada -->
         <article id="article1">
             <div id="imagenPortada">
             </div>
             <div id="fotoDebajoDePortada">
                 <div id="contenedorImagenPortada">
-                    <img src="./imagenes/ImagenPortada.png" alt="">
+                    <img src="./imagenes/ImagenPortada.png" alt="El interior del Asadero">
                 </div>
             </div>
         </article>
+        <!-- Ir al menú -->
         <article id="article2">
             <div class="tituloArticulo">
-                <h3>Title Article 2</h3>
+                <h3>Bienvenidos</h3>
+            </div>
+            <div class="parrafoInformacion ligaMenu">
+                <a href="./menu.html" target="_blank">
+                    <p>Da Click Aquí Para Ver El Menú.</p>
+                    <img src="./imagenes/menu/1.png" alt="Menú">
+                </a>
             </div>
             <div class="parrafoInformacion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe, iusto quae nostrum alias vero voluptate velit perspiciatis numquam blanditiis laboriosam nesciunt consequatur animi. Dolores, pariatur consectetur? Quam, ipsam vitae.</p>
-            </div>
-            <div class="tituloParrafo">
-                <h3>Title Paragrapth</h3>
-            </div>
-            <div class="parrafoInformacion">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aspernatur labore ipsum dicta nam corrupti cupiditate eum non veniam maxime impedit quia eligendi accusamus, odio natus voluptates rerum atque error.    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe, iusto quae nostrum alias vero voluptate velit perspiciatis numquam blanditiis laboriosam nesciunt consequatur animi. Dolores, pariatur consectetur? Quam, ipsam vitae.</p>
+                <p>En nuestro menú encontrarás todos nuestros platillos y medios de contacto. Además, puedes llamar o mandar whatsapp al <b>22 95 21 43 22</b>.</p>
             </div>
         </article>
+        <!-- Promociones -->
         <article id="article3">
             <div class="tituloArticulo">
-                <h3>Title Article 3</h3>
-            </div>
-            <div class="parrafoInformacion">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aspernatur labore ipsum dicta nam corrupti cupiditate eum non veniam maxime impedit quia eligendi accusamus, odio natus voluptates rerum atque error.    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe, iusto quae nostrum alias vero voluptate velit perspiciatis numquam blanditiis laboriosam nesciunt consequatur animi. Dolores, pariatur consectetur? Quam, ipsam vitae.</p>
+                <h3>Promociones</h3>
             </div>
             <div id="carrucel1" class="carrucel">
                 <div class="carrucelBotonesFlecha">
@@ -82,14 +90,20 @@
                 </div>
                 <div id="contenedorImagenescarrucel1" class="contenedorVistas">
                     <div id="contenedorVista1carrucel1" class="contenedorImagenesCarrucel">
-                        <img src="./imagenes/1.jpeg" alt="">
-                        <img src="./imagenes/2.jpg" alt="">
-                        <img src="./imagenes/3.jpg" alt="">
+                        <a href="https://www.facebook.com/asaderodelabueloo/posts/pfbid02eWCMTcAFBCyuXxRCapxRp4VfetRvK7mDrKwHFMMdoNvQZvEnfxhXH8jeiNjuQ25El" target="_blank">
+                            <img src="./imagenes/promos/1.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/asaderodelabueloo/posts/pfbid0vBvBh413vvYgxJb8MjrnuuK17Qxe2LjoY61zuHZeJkcL2y7Rnqn6FWKUiSZ74WP6l" target="_blank">
+                            <img src="./imagenes/promos/2.png" alt="">
+                        </a>
                     </div>
                     <div id="contenedorVista2carrucel1" class="contenedorImagenesCarrucel">
-                        <img src="./imagenes/4.jpg" alt="">
-                        <img src="./imagenes/5.jpg" alt="">
-                        <img src="./imagenes/6.jpg" alt="">
+                        <a href="https://www.facebook.com/asaderodelabueloo/posts/pfbid0BNNTLBaFskBBkaoLc4B6ynHiJSiby2hqFsFEJeFC6fkBew3EdfFasFdsKzrsiDqTl" target="_blank">
+                            <img src="./imagenes/promos/3.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/asaderodelabueloo/posts/pfbid02eWCMTcAFBCyuXxRCapxRp4VfetRvK7mDrKwHFMMdoNvQZvEnfxhXH8jeiNjuQ25El" target="_blank">
+                            <img src="./imagenes/promos/1.png" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="carrucelBotonesPlayStop">
@@ -97,72 +111,58 @@
                     <button class="carrucelBotonStop" id="botonStopcarrucel1">Stop</button>
                 </div>
             </div>
+            <div class="parrafoInformacion">
+                <p>Da click en las imágenes para ver nuestras promociones en Facebook. También puedes llamar o mandar mensaje de whatsapp al número <b>22 95 21 43 22</b>.</p>
+            </div>
         </article>
 
         <article id="article4">
             <div class="tituloArticulo">
-                <h3>Title Article 4</h3>
-            </div>
-            <div class="contenedorImagen">
-                <img src="./imagenes/portada.jpg" alt="">
+                <h3>Visitanos</h3>
             </div>
             <div class="contenedorImagenAside">
-                <img src="./imagenes/portada2.jpeg" alt="">
+                <img src="./imagenes/interior/3.jpg" alt="">
                 <div class="contenedorContenidoImagenAside">
-                    <h4>Title Image Aside</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid similique dolorem consectetur modi, nihil quos necessitatibus ratione sunt. Consequatur nulla quod perspiciatis velit magnam ratione molestiae doloremque debitis quisquam alias!</p>
+                    <h4>Descubre Asadero del Abuelo</h4>
+                    <p>En Asadero del Abuelo los alimentos son preparados al momento. Nuestro ambiente es muy familiar y contamos con música en vivo los fines de semana por la noche.</p>
+                    <p>Nos encontramos en Boulevard Adolfo Ruiz Cortines lote 3, Fraccionamiento Costa Verde frente al Club Libanés. En <b>Boca del Río Veracruz puerto</b>, Ciudad de Veracruz, México.</p>
                 </div>
-            </div>
-            <div class="parrafoInformacion">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem modi beatae quam eius natus, sequi nobis dolorem obcaecati rem animi dignissimos quia, voluptate perferendis.</p>
-            </div>
-            <div class="tituloParrafo">
-                <h3>Title Paragrapth</h3>
-            </div>
-            <div class="parrafoInformacion">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aspernatur labore ipsum dicta nam corrupti cupiditate eum non veniam maxime impedit quia eligendi accusamus, odio natus voluptates rerum atque error.    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe, iusto quae nostrum alias vero voluptate velit perspiciatis numquam blanditiis laboriosam nesciunt consequatur animi. Dolores, pariatur consectetur? Quam, ipsam vitae.</p>
-            </div>
-            <div class="tituloParrafo">
-                <h3>Title Paragrapth</h3>
-            </div>
-            <div class="parrafoInformacion">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aspernatur labore ipsum dicta nam corrupti cupiditate eum non veniam maxime impedit quia eligendi accusamus, odio natus voluptates rerum atque error.    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe, iusto quae nostrum alias vero voluptate velit perspiciatis numquam blanditiis laboriosam nesciunt consequatur animi. Dolores, pariatur consectetur? Quam, ipsam vitae.</p>
-            </div>     
+            </div> 
         </article>
         <article id="article5">
             <div class="tituloArticulo">
-                <h3>Title Article 5</h3>
+                <h3>Parrilladas</h3>
             </div>
             <div class="parrafoInformacion">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem modi beatae quam eius natus, sequi nobis dolorem obcaecati rem animi dignissimos quia, voluptate perferendis.</p>
+                <p>Contamos con los mejores platillos de comida asadera al servicio de su mesa. Pide tus platillos favoritos a domicilio, reserva tu mesa, pregunta promociones y eventos al número <b>22 99 27 30 75</b> y <b>22 95 21 43 22</b>.</p>
             </div> 
             <div class="contenedorBadges">
                 <div class="badgue">
-                    <h4>TitleService</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit accusantium itaque fuga ab soluta quaerat quisquam eligend.</p>
-                    <p>$500.00</p>
+                    <h4>Parrillada para 2 personas</h4>
+                    <p>Incluye pastor, chistorra, arrachera, nopales asados, cebollines asados, chiles toreados y salsa chimichurri.</p>
+                    <p><b>$540.00</b></p>
                 </div>
                 <div class="badgue">
-                    <h4>TitleService</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit accusantium itaque fuga ab soluta quaerat quisquam eligend.</p>
-                    <p>$500.00</p>
+                    <h4>Parrillada para 4 personas</h4>
+                    <p>Incluye pastor, bisteck, pollo, chorizo argentino, nopales asados, cebollines asados, chiles toreados y salsa chimichurri.</p>
+                    <p><b>$700.00</b></p>
                 </div>
                 <div class="badgue">
-                    <h4>TitleService</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit accusantium itaque fuga ab soluta quaerat quisquam eligend.</p>
-                    <p>$500.00</p>
+                    <h4>Parrillada especial para 4 personas</h4>
+                    <p>Incluye chuleta, arrachera, chistorra, chorizo argentino, camarones asados, nopales asados, cebollines asados, chiles toreados y salsa chimichurri.</p>
+                    <p><b>$840.00</b></p>
                 </div>
             </div>
         </article>
         <article id="article6">
             <div class="tituloArticulo">
-                <h3>Title Article 6</h3>
+                <h3>Pedidos</h3>
             </div>
             <div class="tituloParrafo">
-                <h3>Title Paragrapth</h3>
+                <h3>Pedidos a través de aplicaciones</h3>
             </div>
             <div class="parrafoInformacion">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aspernatur labore ipsum dicta nam corrupti cupiditate eum non veniam maxime impedit quia eligendi accusamus, odio natus voluptates rerum atque error.    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe, iusto quae nostrum alias vero voluptate velit perspiciatis numquam blanditiis laboriosam nesciunt consequatur animi. Dolores, pariatur consectetur? Quam, ipsam vitae.</p>
+                <p>Si estás en el area de boca del río veracruz, busca en las apps de comida para pedir a domicilio, o llama al número <b>22 99 27 30 75</b> o escribe whatsapp al número <b>22 95 21 43 22</b>.</p>
             </div>
             <div id="contenedorCarrucel2">
                 <div id="carrucel2" class="carrucel">
@@ -172,22 +172,22 @@
                     </div>
                     <div id="contenedorImagenescarrucel2" class="contenedorVistas">
                         <div id="contenedorVista1carrucel2" class="contenedorImagenesCarrucel">
-                            <img src="./imagenes/1.jpeg" alt="">
+                            <img src="./imagenes/apps/1.png" alt="Uber Eats" class="imgApps">
                         </div>
                         <div id="contenedorVista2carrucel2" class="contenedorImagenesCarrucel">
-                            <img src="./imagenes/2.jpg" alt="">
+                            <img src="./imagenes/apps/2.png" alt="Didi Food" class="imgApps">
                         </div>
                         <div id="contenedorVista3carrucel2" class="contenedorImagenesCarrucel">
-                            <img src="./imagenes/3.jpg" alt="">
+                            <img src="./imagenes/apps/3.png" alt="Rappi" class="imgApps">
                         </div>
                         <div id="contenedorVista4carrucel2" class="contenedorImagenesCarrucel">
-                            <img src="./imagenes/4.jpg" alt="">
+                            <img src="./imagenes/apps/1.png" alt="Uber Eats" class="imgApps">
                         </div>
                         <div id="contenedorVista5carrucel2" class="contenedorImagenesCarrucel">
-                            <img src="./imagenes/5.jpg" alt="">
+                            <img src="./imagenes/apps/2.png" alt="Didi Food" class="imgApps">
                         </div>
                         <div id="contenedorVista6carrucel2" class="contenedorImagenesCarrucel">
-                            <img src="./imagenes/6.jpg" alt="">
+                            <img src="./imagenes/apps/3.png" alt="Rappi" class="imgApps">
                         </div>
                     </div>
                     <div class="carrucelBotonesPlayStop">
@@ -196,22 +196,29 @@
                     </div>
                 </div>
             </div>
-            <div class="tituloParrafo">
-                <h3>Title Paragrapth</h3>
+        </article>
+        <article id="article7">
+            <div class="tituloArticulo">
+                <h3>Encuéntranos</h3>
             </div>
             <div class="parrafoInformacion">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aspernatur labore ipsum dicta nam corrupti cupiditate eum non veniam maxime impedit quia eligendi accusamus, odio natus voluptates rerum atque error.    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe, iusto quae nostrum alias vero voluptate velit perspiciatis numquam blanditiis laboriosam nesciunt consequatur animi. Dolores, pariatur consectetur? Quam, ipsam vitae.</p>
+                <p>Estamos en Boulevard Adolfo Ruiz Cortines lote 3, Fraccionamiento Costa Verde frente al Club Libanés. En <b>Boca del Río Veracruz puerto</b>, Ciudad de Veracruz, México.</p>
             </div>
         </article>
+
         <article class="pluggins">
-            <iframe class="pluggins-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60310.68555441517!2d-96.1751548994873!3d19.13317841009763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c343a5736c7495%3A0xc858906eeca5fa20!2sAeropuerto%20Internacional%20de%20Veracruz!5e0!3m2!1ses-419!2smx!4v1622954424141!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.642345359236!2d-96.11687028605992!3d19.16712678703565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c341271da3cf0f%3A0xfa253e8d2b48574c!2sAsadero%20del%20Abuelo!5e0!3m2!1ses-419!2smx!4v1626042377711!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
+            <div class="fb-page" data-href="https://www.facebook.com/asaderodelabueloo/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
         </article>
     </section>
     <footer></footer>
     <script src="./js/carrucel/index.js"></script>
     <script src="./js/carrucel/miCarrucel.js"></script>
-    <script src="./js/menuMovile/menuMovile.js"></script>    
-
+    <script src="./js/menuMovile/menuMovile.js"></script>
+    <script src="./js/mapa.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_AQ8U6hTU3-56SqWfBBEIJIiXRaRe3AA&callback=initMap">
+    </script>
+    
 </body>
 </html>
