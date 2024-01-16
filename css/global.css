@@ -40,7 +40,7 @@ button{
 .parrafoInformacion p{
     width: 90%;
     text-align: justify;
-    font-size:16px;
+    font-size: 16px;
 }
 .ligaMenu {
     a {
@@ -54,6 +54,7 @@ button{
     p {
         text-align: center;
         width: 100%;
+        font-size: 25px;
     }
     img {
         margin: 10px;
@@ -80,7 +81,9 @@ button{
         font-size:20px;
     }
     .ligaMenu {
-
+        p {
+            font-size: 30px;
+        }
         img {
             width: 300px;
         }
