@@ -17,6 +17,10 @@ a{
 button{
     cursor: pointer;
 }
+.primerArticulo {
+    padding-top: 0;
+    margin-top: -60px;
+}
 /* Estilos de letra */
 .tituloParrafo{
     margin-top: 20px;
@@ -66,6 +70,7 @@ button{
     }
 }
 .tituloArticulo{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
