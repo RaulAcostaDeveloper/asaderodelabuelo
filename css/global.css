@@ -81,6 +81,38 @@ button{
     text-align: center;
     font-size:30px;
 }
+.ligaWhatsapp {
+    text-decoration: none;
+}
+.ligaWhatsapp img{
+    width: 30px;
+}
+.redesFlotantes {
+    position: fixed;
+    right: 0;
+    top: 60%;
+    width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.redesFlotantes img{
+    margin-top: 10px;
+    width: 30px;
+}
+.redesFlotantes .redes{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.floatLeft {
+    float: left;
+}
+.redSocial {
+    margin-top: 30px;
+    margin-left: 20px;
+    text-decoration: none;
+}
 @media screen and (min-width: 768px){
     .parrafoInformacion p{
         font-size:20px;
