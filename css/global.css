@@ -113,6 +113,33 @@ button{
     margin-left: 20px;
     text-decoration: none;
 }
+.copiarCorreoElectronico {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.copiarCorreoElectronico a {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+.copiarCorreoElectronico button {
+    margin-top: 20px;
+    width: 75px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.copiarCorreoElectronico img {
+    width: 25px;
+    height: 25px;
+}
 @media screen and (min-width: 768px){
     .parrafoInformacion p{
         font-size:20px;
@@ -124,5 +151,14 @@ button{
         img {
             width: 300px;
         }
+    }
+    .copiarCorreoElectronico {
+        align-items:flex-end;
+    }
+    .copiarCorreoElectronico a {
+        margin-left: 10px;
+    }
+    .copiarCorreoElectronico button {
+        margin-left: 10px;
     }
 }
