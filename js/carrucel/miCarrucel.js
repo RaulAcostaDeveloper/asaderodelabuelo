@@ -8,13 +8,11 @@ function crearCarrucel(idContenedor, numeroVistas, intervaloDeTiempo) {
         vista.classList.remove("displayNone");
         vista.classList.add("displayFlex");
         vista.classList.add("animacionDesplazarDesdeDerecha");
-        console.log(vista);
     }
     const desaparecerVista = (id) => {
         let vista = document.getElementById('contenedorVista'+id+idContenedor);
         vista.classList.remove("animacionDesplazarDesdeDerecha");
         vista.classList.add("animacionDesaparecer");
-        console.log(vista);
         setTimeout(() => {
             vista.classList.remove("displayFlex");
             vista.classList.add("displayNone");
